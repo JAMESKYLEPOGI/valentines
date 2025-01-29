@@ -18,7 +18,7 @@ root.iconphoto(True, tk.PhotoImage(file="F:\in-love.png"))
 class Email:
     def rejected_email(self,subject,body):
         sender_email = "sample@gmail.com"  # Replace with your email
-        receiver_email = "sample@gmail.com"  # Replace with recipient's email
+        receiver_email = "sample@gmail.com"  # Replace with recipient's email #pwede rin same email lang mo sa sender
         password = "puxr ewon cgxf lmwc"  # Replace with your email password (use app passwords for security)
 
         msg = EmailMessage()
