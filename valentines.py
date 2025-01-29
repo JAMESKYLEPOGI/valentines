@@ -17,8 +17,8 @@ root.iconphoto(True, tk.PhotoImage(file="F:\in-love.png"))
 # Email sender function
 class Email:
     def rejected_email(self,subject,body):
-        sender_email = "jameskylelaurente555@gmail.com"  # Replace with your email
-        receiver_email = "jameskylelaurente555@gmail.com"  # Replace with recipient's email
+        sender_email = "sample@gmail.com"  # Replace with your email
+        receiver_email = "sample@gmail.com"  # Replace with recipient's email
         password = "puxr ewon cgxf lmwc"  # Replace with your email password (use app passwords for security)
 
         msg = EmailMessage()
@@ -38,7 +38,7 @@ class Email:
 def valentines():
 
     messagebox.showinfo("crushie", "hi")
-    date = messagebox.askyesno("crushie", "pwede ba kita date")
+    date = messagebox.askyesno("crushie", "pwede ba kita date") #customize
     email = Email()
 
     if not date:
@@ -51,7 +51,6 @@ def valentines():
         messagebox.showinfo("Yay!", "See you on our date! ❤️")
         email.rejected_email(subject="Accepted! 🎉",body="Your date has been accepted! Get ready for the special day! ❤️")
         root.destroy()
-
 
 
 valentines()
